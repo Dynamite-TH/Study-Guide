@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Guide - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #moduleList {
+            margin-top: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .module-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .module-item:last-child {
+            border-bottom: none;
+        }
+
+        .error {
+            color: #d32f2f;
+        }
+
+        .loading {
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Study Guide</h1>
+    <p>Welcome to the Study Guide! Click the button below to load the modules.</p>
+    <button onclick="fetchModules(4)">Level 4 Modules</button>
+    <button onclick="fetchModules(5)">Level 5 Modules</button>
+    <button onclick="fetchModules(6)">Level 6 Modules</button>
+    <button onclick="fetchModules()">All Modules</button>
+    <div id="moduleList"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
+</body>
+
+</html>
