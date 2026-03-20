@@ -70,7 +70,6 @@ app.get('/api/resources/:code', (req, res) => {
 });
 
 
-app.listen(8080, () => {
-    console.log(`Server is running on port 8080`);
-});
+app.listen(8080);
+console.log('Server is running on http://localhost:8080');
 
