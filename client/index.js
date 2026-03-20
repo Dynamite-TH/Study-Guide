@@ -43,7 +43,7 @@ function attachModuleListeners(modules) {
 function loadModuleTemplate(module) {
     const template = `
         <div class="module-page">
-            <button class="btn-back" onclick="fetchModules()">← Back to Modules</button>
+            <button class="btn-back" onclick="fetchModules(${module.level})">← Back to Modules</button>
             <h1>${module.name}</h1>
             <p><strong>Code:</strong> ${module.code || 'N/A'}</p>
             <p><strong>Credits:</strong> ${module.credits || 'N/A'}</p>
